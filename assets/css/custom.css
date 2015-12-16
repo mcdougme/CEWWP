@@ -6,9 +6,14 @@ Orange:   #EB7F13
 
 */
 
+.intro-message {
+
+}
+
 .background-image {
-background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/cropped-cropped-cropped-CEWschlrLnch15074.jpg);
- }
+  padding: 50px;
+  background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/cropped-cropped-cropped-CEWschlrLnch15074.jpg);
+}
 
  h1, h5 {
    color: white;
@@ -25,10 +30,16 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
 
  /* ====== MENU OUTLINE ====== */
 
- .menu-wrap {
+
+.search-menu {
+    clear: both;
+}
+ #myNav {
      width:100%;
      box-shadow:0px 1px 3px rgba(0,0,0,0.2);
      background:#575294;
+     border: 0px;
+     border-radius: 0px;
  }
 
  .menu {
@@ -42,14 +53,15 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
      font-family:'Helvetica';
  }
 
+ .menu li,
  .menu a {
      transition:all linear 0.15s;
-     color: white;
+     color: white !important;
  }
 
- .menu li:hover > a, .menu .current-item > a {
+ .sub-menu li > a:hover {
      text-decoration: none;
-     color: white;
+     color: #575294 !important;
  }
 
  .menu .arrow {
@@ -80,7 +92,7 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
 /* BOTTOM LEVEL */
 
 .sub-menu {
-    width:160%;
+    min-width:100px;
     padding:5px 0px;
     position:absolute;
     top:100%;
@@ -88,7 +100,7 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
     z-index:-1;
     opacity:0;
     transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    /*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
     background:#575294;
 }
 
@@ -99,7 +111,7 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
 
 .sub-menu li {
     display:block;
-    font-size:16px;
+    /*font-size:16px;*/
 }
 
 .sub-menu li a {
@@ -109,4 +121,9 @@ background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/
 
 .sub-menu li a:hover, .sub-menu .current-item a {
     background: white;
+}
+
+.search-menu {
+    width: 300px;
+    margin-left: -125px;
 }
