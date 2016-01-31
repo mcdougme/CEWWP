@@ -1,32 +1,95 @@
 /*COLOR REFERENCES
 
 Purple:   #575294
-Green:  #A4A700
+Green:    #A4A700
 Orange:   #EB7F13
 
 */
 
-.intro-message {
+/* ==== GENERAL ==== */
 
+body {
+    margin-top: 70px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    background-color: white;
+    /*background: url('../img/cheap_diagonal_fabric.png');*/
 }
 
 .background-image {
-  padding: 50px;
-  background: url(http://cewscholarcommunity.umich.edu/wp-content/uploads/2015/10/cropped-cropped-cropped-CEWschlrLnch15074.jpg);
+  max-height: 500px;
+  width: auto;
 }
 
- h1, h5 {
-   color: white;
+/* ==== GLOBAL ==== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html a {
+  color: #EB7F13;
+}
+
+ h1,h2,h3,h4,h5,h6 {
+     font-weight: bold;
  }
 
- body {
-     background-color: #FFEFD5
+ h1 {
+   font-size: 2.5em;
+   color: #575294;
  }
+
+ h1,h2 {
+   margin: 0 0 15px;
+ }
+
+ h4{
+   margin: 20px 0;
+   font-size: 18px;
+ }
+
+h5{
+   margin: 10px 10px;
+   font-size: 18px;
+
+ }
+
+#bottomone {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+/* ==== CAROUSEL ==== */
+
+
+ /*#main-container {
+   background-color: url('../img/cheap_diagonal_fabric.png');
+ }*/
 
  .clearfix:after {
      display:block;
      clear:both;
  }
+
+ #carousel-example-generic {
+     padding-left: 100px;
+     padding-right: 100px;
+ }
+
+ .fixedElement {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+.header-spacer {
+  visibility: hidden;
+}
 
  /* ====== MENU OUTLINE ====== */
 
@@ -35,7 +98,7 @@ Orange:   #EB7F13
     clear: both;
 }
  #myNav {
-     width:100%;
+     /*width:100%;*/
      box-shadow:0px 1px 3px rgba(0,0,0,0.2);
      background:#575294;
      border: 0px;
@@ -50,7 +113,10 @@ Orange:   #EB7F13
  .menu li {
      margin:0px;
      list-style:none;
-     font-family:'Helvetica';
+     font-family:'Roboto';
+     -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+     font-weight: bold;
  }
 
  .menu li,
@@ -98,15 +164,14 @@ Orange:   #EB7F13
     top:100%;
     left:0px;
     z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
+    display: none;
     /*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
     background:#575294;
 }
 
 .menu li:hover .sub-menu {
     z-index:1;
-    opacity:1;
+    display: inline-block;
 }
 
 .sub-menu li {
@@ -126,4 +191,138 @@ Orange:   #EB7F13
 .search-menu {
     width: 300px;
     margin-left: -125px;
+}
+
+#titlepart {
+  padding: 10px;
+}
+
+/* ==== CEW-HOME ==== */
+
+
+i:before{
+  content:":before";
+  width: 250px;
+  text-align: center;
+  display:inline-block;
+}
+
+.glyphicon.glyphicon-education {
+    color: #575294;
+    font-size: 80px;
+}
+
+.glyphicon.glyphicon-user {
+    color: #575294;
+    font-size: 80px;
+}
+
+.glyphicon.glyphicon-ok {
+    color: #575294;
+    font-size: 80px;
+}
+
+.glyphicon.glyphicon-globe {
+    color: #575294;
+    font-size: 80px;
+}
+
+
+#cew-home {
+  padding-top: 30px;
+}
+
+.cew-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ==== SCHOLARS & FELLOWS ==== */
+
+#waves {
+  max-width: 350px;
+  max-height: auto;
+  display: inline-block;
+  position: relative;
+  left: -25px;
+  padding-bottom: 20px;
+}
+
+#scholarsfellows {
+  background: #575294;
+  color: white;
+  padding-bottom: 50px;
+}
+
+#subsf {
+  font-size: 18px;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+/* ==== RESOURCES ==== */
+
+#resources {
+  background-color: lavender;
+}
+
+.glyph-small {
+  content:":before";
+  width: 200px;
+  text-align: center;
+  display:inline-block;
+}
+
+.glyphicon.glyphicon-apple {
+  color: #575294;
+  font-size: 40px;
+
+}
+
+.glyphicon.glyphicon-briefcase {
+  color: #575294;
+  font-size: 40px;
+}
+
+.glyphicon.glyphicon-plus-sign {
+  color: #575294;
+  font-size: 40px;
+}
+
+.glyphicon.glyphicon-sunglasses {
+  color: #575294;
+  font-size: 40px;
+}
+
+/* ===== FORUMS ==== */
+
+#rforums {
+
+}
+
+
+/* FOOTER */
+#wrapper {
+	max-height:400px;
+	position:relative;
+}
+#header {
+	background:#ededed;
+	padding:0px;
+  font-size: 14px;
+}
+#content {
+	padding-bottom:250px; /* Height of the footer element */
+  font-size: 13px;
+}
+#footer {
+	background:#575294;
+	width:100%;
+	height:200px;
+	position:absolute;
+	bottom:-50px;
+	left:0;
+  right: -50px;
 }
